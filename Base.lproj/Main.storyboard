@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Input First Number" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iZN-B8-HLG">
+                                <rect key="frame" x="117" y="140" width="142" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DuU-qm-vXl">
+                                <rect key="frame" x="166" y="504.5" width="48" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Input Second Number" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T47-s8-4Sl">
+                                <rect key="frame" x="116" y="413" width="158" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="wNK-US-P4m">
+                                <rect key="frame" x="17" y="234" width="344" height="107"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R9l-XS-8ug">
+                                        <rect key="frame" x="0.0" y="0.0" width="86" height="107"/>
+                                        <state key="normal" title="Plus"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ST-Mb-Eal">
+                                        <rect key="frame" x="86" y="0.0" width="86" height="107"/>
+                                        <state key="normal" title="Minus"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p3d-nx-Jau">
+                                        <rect key="frame" x="172" y="0.0" width="86" height="107"/>
+                                        <state key="normal" title="Multiple"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lsq-JQ-7x3">
+                                        <rect key="frame" x="258" y="0.0" width="86" height="107"/>
+                                        <state key="normal" title="Divide"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="T47-s8-4Sl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="7.5" id="Dxl-g0-1Sd"/>
+                            <constraint firstItem="T47-s8-4Sl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="100" id="GAt-Gq-c79"/>
+                            <constraint firstItem="iZN-B8-HLG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ine-S2-hp2"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="T47-s8-4Sl" secondAttribute="bottom" constant="224" id="Ol9-zF-fuW"/>
+                            <constraint firstItem="iZN-B8-HLG" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="120" id="WHu-nM-NoI"/>
+                            <constraint firstItem="wNK-US-P4m" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-46" id="YcG-ZT-NmD"/>
+                            <constraint firstItem="DuU-qm-vXl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="150" id="cy7-Pf-jFc"/>
+                            <constraint firstItem="wNK-US-P4m" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="1" id="dkO-av-8Sz"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="wNK-US-P4m" secondAttribute="bottom" constant="326" id="pjx-QK-VS1"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="DuU-qm-vXl" secondAttribute="bottom" constant="142" id="sye-bl-vEt"/>
+                            <constraint firstItem="wNK-US-P4m" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="1.5" id="vpk-bb-R23"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="divideButton" destination="Lsq-JQ-7x3" id="NO0-0M-cBN"/>
+                        <outlet property="firstNumber" destination="iZN-B8-HLG" id="w5P-hl-Cp0"/>
+                        <outlet property="minusButton" destination="8ST-Mb-Eal" id="yir-uO-ZaB"/>
+                        <outlet property="multipleButton" destination="p3d-nx-Jau" id="vH8-7z-wSz"/>
+                        <outlet property="plusButton" destination="R9l-XS-8ug" id="b0Y-AW-EG8"/>
+                        <outlet property="resultLabel" destination="DuU-qm-vXl" id="Y2b-1d-6aF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
